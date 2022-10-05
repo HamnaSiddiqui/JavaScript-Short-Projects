@@ -17,6 +17,7 @@ function lowercount(){
     else{
         counter.style.color = "white";
     }
+    counter.animate([{opacity:'0.2'},{opacity:'0.9'}],{duration:400, fill:"forwards"});
 }
 
 function addcount(){
@@ -28,4 +29,5 @@ function addcount(){
     else{
         counter.style.color = "white";
     }
+    counter.animate([{opacity:'0.2'},{opacity:'0.9'}],{duration:400, fill:"forwards"});
 }

@@ -5,5 +5,10 @@ let display = document.querySelector(".msgdel");
 msgbtn.addEventListener("click",displaytype);
 
 function displaytype(){
-  display.innerHTML = input.value;
+    if(input.value == 0){
+        alert("Please type something");
+        return;
+    }
+    else{
+        display.innerHTML = input.value;}
 }

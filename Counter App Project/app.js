@@ -14,6 +14,9 @@ function lowercount(){
     if(count>0){
         counter.style.color = "green";
     }
+    else{
+        counter.style.color = "white";
+    }
 }
 
 function addcount(){
@@ -21,5 +24,8 @@ function addcount(){
     counter.innerHTML = count;
     if(count<0){
         counter.style.color = "red";
+    }
+    else{
+        counter.style.color = "white";
     }
 }

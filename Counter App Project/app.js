@@ -9,9 +9,12 @@ lowerbtn.addEventListener("click", lowercount);
 addbtn.addEventListener("click", addcount);
 
 function lowercount(){
-    count ++;
+    count --;
     counter.innerHTML = count;
-    if(count>0){
+    if(count<0){
+        counter.style.color = "red";
+    }
+    else if(count > 0){
         counter.style.color = "green";
     }
     else{
@@ -21,9 +24,12 @@ function lowercount(){
 }
 
 function addcount(){
-    count --;
+    count ++;
     counter.innerHTML = count;
-    if(count<0){
+    if(count>0){
+        counter.style.color = "green";
+    }
+    else if(count < 0){
         counter.style.color = "red";
     }
     else{
@@ -31,3 +37,9 @@ function addcount(){
     }
     counter.animate([{opacity:'0.2'},{opacity:'0.9'}],{duration:400, fill:"forwards"});
 }
+
+
+
+
+
+

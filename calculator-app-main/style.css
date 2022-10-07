@@ -8,11 +8,12 @@ body{
     
   }
 header{
+    margin-top: 4em;
     height: 10vh;
     color: aliceblue;
 }
 nav ul{
-    padding-top: 2em;
+    /* padding-top: 2em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@ li{
 }
 .li1{
     font-size: 25px;
-    padding: 0 8em 0 0;
+    padding: 0 7em 0 0;
     font-weight: 700;
 }
 .li2{
@@ -47,19 +48,19 @@ li{
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 .ball.active{
   transform: translateX(150%);
 }
 .ball.pro{
   transform: translateX(290%);
-
 }
 
 
 .calc{
     position: absolute;
-    margin-top: 7em;
+    margin-top: 10em;
     top:30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,11 +72,16 @@ li{
     border-radius: 5px;
     text-align: right;
   }
-  h2{
-    padding-top: 0.7em;
-    padding-right: 0.5em;
+  .screen{
+    padding: 0 15px 0 15px;
+    margin-top: 0;
     font-size: 2em;
+    height: 2.3em;
+    width: 11.5em;
+    border-radius: 5px;
     color: white;
+    border: none;
+    background-color: hsl(224, 36%, 15%);
   }
   .main{
     background-color: hsl(223, 31%, 20%);
@@ -109,6 +115,9 @@ li{
   button:hover{
     cursor: pointer;
     background-color: white;
+  }
+  button:active{
+    box-shadow: none;
   }
   .box1{
     grid-column: 1/2;

@@ -196,8 +196,14 @@ li{
 
 
   @media (max-width:470px) {
+    /* header{
+      background-color: black;
+      margin-bottom: 4em;
+      height: 20vh;
+      /* padding-top: 7em; */
+    } */
     .calc{
-        margin-top: 10em;
+        /* margin-top: 10em; */
     }
     .main{
         height: 65vh;

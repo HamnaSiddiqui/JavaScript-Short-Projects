@@ -127,6 +127,13 @@ ball.addEventListener('click', function () {
         screen.style.backgroundColor = "hsl(0, 0%, 93%)";
         ball.style.backgroundColor = "hsl(25, 98%, 40%)";
         equalbtn.style.backgroundColor = "hsl(25, 98%, 40%)";
+        equalbtn.style.boxShadow = "0 4px 0 0 hsl(25, 99%, 27%)";
+        equalbtn.addEventListener('mouseover', function () {
+            equalbtn.style.backgroundColor = "hsl(25, 98%, 49%)";
+        })
+        equalbtn.addEventListener('mouseout', function () {
+            equalbtn.style.backgroundColor = "hsl(25, 98%, 40%)";
+        })
         screen.style.color = "black";
         for(let i=0; i<toggleid.length; i++){
             toggleid[i].style.color = "black";

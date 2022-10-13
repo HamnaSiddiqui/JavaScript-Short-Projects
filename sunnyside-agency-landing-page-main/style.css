@@ -27,9 +27,6 @@ li,a,button{
 }
 .logo{
     cursor: pointer;
-    /* margin-right: 44em; */
-    float: left;
-    margin-left: 0;
 }
 
 ul{
@@ -55,7 +52,10 @@ button{
     cursor: pointer;
     transition: all 0.9s ease-out 0s;
 }
-
+button:hover{
+    background-color: hsl(198, 62%, 76%);
+    color: white;
+}
 .arrow{
     margin-top: 3em;
     height: 3.5em;
@@ -72,7 +72,7 @@ button{
 }
 .side1{
     background-color: white;
-    height: 15em;
+    height: 19em;
     text-align: left;
     padding: 40px 0 30px 0;
 }
@@ -97,7 +97,7 @@ h4{
 }
 .side3{
     background: url("/images/mobile/image-stand-out.jpg")center/cover no-repeat;
-    height: 15em;
+    height: 19em;
 
 }
 .side4{
@@ -107,7 +107,7 @@ h4{
 .side5{
     background: url("/images/mobile/image-graphic-design.jpg")center/cover no-repeat;
     background-size: 100%;
-    height: 15em;
+    height: 19em;
     text-align: center;
 
 }
@@ -131,6 +131,9 @@ h3{
 .two{
     color:hsl(198, 62%, 26%);
 }
+
+/* testimonials */
+
 .profiles{
     background-color: hsl(0, 0%, 100%);
     height: 20em;
@@ -143,7 +146,7 @@ h3{
 }
 #testimon{
     height: 14em;
-    width: 37em;
+    width: 31em;
     margin: 2em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,10 +174,10 @@ h3{
     font-size: 10px;
     padding: 10px 14px;
 }
-.test2{
+.test2, .test3{
     margin-top: 3em;
 }
-.test1, .test3{
+.test1{
     margin-top: 4em;
 }
 h5{
@@ -182,22 +185,7 @@ h5{
     color: hsl(210, 4%, 67%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ending bar */
 
 .endings{
     background-color: blue;
@@ -216,4 +204,99 @@ h5{
 }
 .end4{
     background: url("/images/desktop/image-gallery-sugarcubes.jpg")center/cover no-repeat;
+}
+
+
+.footer{
+    background-color: hsl(168, 34%, 50%);
+    color: hsl(167, 40%, 24%);
+    height: 12em;
+    width: 100%;
+    text-align: center;
+}
+.end{
+    padding-top: 2.5em;
+    font-weight: 900;
+    font-size: 15px;
+}
+ul{
+    margin-top: 1em;
+    display: inline-block;
+    padding: 10px;
+}
+.list-items, .ancs{
+    list-style: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 11px;
+}
+.iis{
+    margin-top: 2.5em;
+}
+i{
+    margin-top: 1.5em;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 500px) {
+    body{
+        /* background-color: red; */
+    }
+    .sides{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .side1{
+        padding: 4em 0 2em 0;
+        height: 15em;
+    }
+    .side2{
+        height: 19em;
+    }
+    .side3{
+        height: 19em;
+    }
+    .side4{
+        padding: 4em 0 2em 0;
+        height: 15em;
+    }
+    .side5{
+        padding-top: 4em;
+        height: 20em;
+    }
+    .side6{
+        padding-top: 4em;
+        height: 20em;
+    }
+    .profiles{
+        height: 40em;
+        margin-bottom: 2em;
+    }
+    #testimon{
+        height: 40em;
+        width: 17em;
+        display: grid;
+        margin: 0 auto 1em auto;
+        grid-template-columns: 1fr;
+    }
+    .test1, .test2, .test3{
+        margin-top: 1em;
+    }
+    .endings{
+        display: grid;
+        height: 22.9em;
+        grid-template-columns: 1fr 1fr;
+    }
+    .end1, .end2,.end3, .end4{
+        height: 12em;
+    }
+    .footer{
+        height: 14em;
+        margin-top: 0;
+    }
+    .end{
+        margin-top: 1em;
+        font-size: 19px;
+    }
 }

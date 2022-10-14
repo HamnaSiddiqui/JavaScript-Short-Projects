@@ -14,21 +14,22 @@
 <body>
   <section>
     <div class="first">
-      <div class="header">
+      <header>
         <nav>
-        <img src="/images/logo.svg" alt="logo" class="logo">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <a href="#"><button>Contact</button></a>
-        </ul>
-        <input type="checkbox" id="check">
-        <label id="icon" for="check">
-          <i class="fas fa-bars"></i>
-        </label>
-      </nav>
-    </div>
+          <img src="/images/logo.svg" alt="logo" class="logo">
+          <ul class="nav-menu">
+            <li class="nav-items"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Projects</a></li>
+            <a href="#" class="nav-link"><button>Contact</button></a>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
       <h1 class="head">WE ARE CREATIVES</h1>
       <img src="/images/icon-arrow-down.svg" alt="arrow" class="arrow">
         </div>
@@ -104,5 +105,6 @@
         </div>
       </div>
   </section>
+  <script src="/app.js"></script>
 </body>
 </html>

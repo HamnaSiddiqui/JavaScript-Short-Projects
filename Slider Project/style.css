@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(143, 122, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 15em;
+    height: 10em;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.frame{
+
+}
+.left{
+    width: 15em;
+    height: 10em;
+    transform: rotate(90deg);
+    cursor: pointer;
+}

@@ -82,7 +82,7 @@
       background-color: black;
       gap: 0;
       flex-direction: column;
-      width: 40%;
+      width: 100%;
       text-align: center;
       transition: .4s ease;
     }

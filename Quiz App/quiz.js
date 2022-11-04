@@ -29,3 +29,22 @@ const data = [
       ],
     },
   ];
+
+
+const quest = document.querySelector(".question");
+const play = document.querySelector(".play");
+const result = document.querySelector(".result");
+const game = document.querySelector(".game");
+const submit = document.querySelector(".submit");
+const answers_container = document.querySelector(".answers");
+
+let qindex = 0;
+let wrong_ans = 0;
+let correct_ans = 0;
+let total = 0;
+let selected_ans;
+
+let showQuestion = (index) => {
+    quest.textContent = data[index].question;
+}
+showQuestion(qindex);

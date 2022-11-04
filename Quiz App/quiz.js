@@ -46,5 +46,11 @@ let selected_ans;
 
 let showQuestion = (index) => {
     quest.textContent = data[index].question;
+    answers_container.innerHTML = data[index].answers.map( (item, index) =>
+        `<div class="answer">
+        <input name="answer" type="radio" value="${item.isCorrect}" id="${item}">
+        <label for="1">${item.answer}</label>
+        </div>`
+    ).join("");
 }
 showQuestion(qindex);

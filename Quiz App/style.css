@@ -60,7 +60,6 @@ body{
 }
 .result .correct{
     color: green;
-    text-shadow: green;
     margin-bottom: 1em;
 }
 .result .wrong{

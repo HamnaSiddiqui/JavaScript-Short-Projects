@@ -52,5 +52,24 @@ let showQuestion = (index) => {
         <label for="1">${item.answer}</label>
         </div>`
     ).join("");
+
+    selectAnswer();
 }
+
+function selectAnswer(){
+    answers_container.querySelectorAll("input").forEach(el=>{
+        el.addEventListener("click", (e)=>{
+            if(e.target.value === "true"){
+                correct_ans ++;
+                console.log("answer is correct");
+            }
+            else{
+                wrong_ans++;
+                console.log("wrong");
+            }
+        })
+    })
+}
+
+
 showQuestion(qindex);

@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: #927df1;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@ body{
     align-items: center;
     gap: 50px;
   }
-  
+   */
   .top{
   display: flex;
   align-items: center;

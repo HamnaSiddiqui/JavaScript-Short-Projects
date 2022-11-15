@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: #927df1;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ body{
     width: 5em;
     height: 4em;
     transform: rotate(90deg);
-  }
+  } */
   .right{
     width: 5em;
     height: 4em;
